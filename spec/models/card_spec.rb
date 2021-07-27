@@ -9,7 +9,7 @@ RSpec.describe Card, type: :model do
     it { should validate_presence_of :author }
   end
 
-  # describe 'Relationships' do
-  #
-  # end
+  describe 'Relationships' do
+    it { should have_many(:decks).through(:deck_cards) }
+  end
 end
