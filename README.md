@@ -5,13 +5,22 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 
+  - (2.5.3p105)
 
-* System dependencies
+* System dependencies 
+  - (rails 6.1.4)
 
-* Configuration
+* Existing database design
 
-* Database creation
+![](images/card_shuffler.png)
+
+* Initial Set-Up
+  - From your command line run the following:
+    1. rails db:{create,migrate}
+    2. bundle exec figaro install (you will need this file to put your API key)
+    3. bundle install
+    4. bundle update
 
 * Database initialization
 
