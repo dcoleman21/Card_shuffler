@@ -1,4 +1,4 @@
 class Image < ApplicationRecord
-  belongs_to :card
+  has_many :cards
   validates :description, :image, :source, presence: true
 end

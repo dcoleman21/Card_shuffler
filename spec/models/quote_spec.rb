@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Quote, type: :model do
   describe 'Relationships' do
-    it { should belong_to :card }
+    it { should have_one :card }
   end
 
   describe 'Validations' do

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Image, type: :model do
   describe 'Relationships' do
-    it { should belong_to :card }
+    it { should have_many :cards }
   end
 
   describe 'Validations' do

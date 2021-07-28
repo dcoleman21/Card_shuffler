@@ -1,4 +1,4 @@
 class Quote < ApplicationRecord
-  belongs_to :card
+  has_one :card
   validates :quote, :author, presence: true
 end
