@@ -1,0 +1,17 @@
+<div class="title">
+  <h1>Here is a collection of affirmations</h1>
+  <h2>You can shuffle to see other affirmations</h2>
+</div>
+
+<div class="cards">
+  <% @cards.each do |card| %>
+  <div class="card">
+    <h1 class="quote"><%= card.quote.quote %></h1>
+    <ul class="author"><%= card.quote.author %></ul>
+    <ul class="image"><%= image_tag(card.image.image) %></ul>
+    <ul class="description"><%= card.image.description %></ul>
+    <ul class="source"><%= card.image.source %></ul>
+  </div>
+  <% end %>
+</div>
+<div class="shuffle-button"><%= button_to 'Shuffle', cards_path, method: :get %></div>
