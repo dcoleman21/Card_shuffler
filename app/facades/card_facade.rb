@@ -28,19 +28,15 @@ class CardFacade
               quote: quote_info[:q],
               author: quote_info[:a]
       }
-      Quote.create(data)
+      Quote.create!(data)
     end
   end
 
   def self.create_card
-    counter = 1
-    while counter < 50
+    quotes = Quote.all
+    quotes.each do |quote|
       image = Image.all.sample
-      quote = Quote.find(counter)
-      # ArgumentError:
-      #  wrong number of arguments (given 2, expected 0..1)
-      Card.create(image, quote)
-      counter += 1
+      Card.create({ image: image, quote: quote })
     end
   end
 end
