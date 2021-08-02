@@ -1,17 +1,31 @@
-<div class="title">
-  <h1>Here is a collection of affirmations</h1>
-  <h2>You can shuffle to see other affirmations</h2>
+<div class="card-index-image-wrapper">
+  <img src="/assets/sunRays.jpeg" alt="Reflection">
 </div>
 
-<div class="cards">
-  <% @cards.each do |card| %>
-  <div class="card">
-    <h1 class="quote"><%= card.quote.quote %></h1>
-    <ul class="author"><%= card.quote.author %></ul>
-    <ul class="image"><%= image_tag(card.image.image) %></ul>
-    <ul class="description"><%= card.image.description %></ul>
-    <ul class="source"><%= card.image.source %></ul>
-  </div>
-  <% end %>
+<div class="card-index-title">
+  <h1>Daily Affirmations</h1>
+  <h3>You can shuffle to see other affirmations</h3>
 </div>
-<div class="shuffle-button"><%= button_to 'Shuffle', cards_path, method: :get %></div>
+
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <center
+      <div class="card card-info" style="width: 35rem;">
+        <div class="image">
+          <%= image_tag(@featured_card.image.image) %>
+        </div>
+        <div class="card-body">
+          <h2 class="quote card-title"><%= @featured_card.quote.quote %></h2>
+          <p class="author card-text"><%= @featured_card.quote.author %></p><br>
+          <h3>Image Info</h3>
+          <p class="description card-text"><%= @featured_card.image.description %></p>
+          <p class="source card-text"><%= @featured_card.image.source %></p>
+          <%= button_to 'Shuffle', cards_path, method: :get, :class => "btn" %>
+        </div>
+      </div>
+      </center>
+    </div>
+  </div>
+</div>
