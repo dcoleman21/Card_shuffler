@@ -13,7 +13,10 @@
  *= require_tree .
  *= require_self
  */
- .image-wrapper {
+
+ // Welcome page styling
+
+ .welcome-image-wrapper {
   z-index: -1;
  position: absolute;
  top:0;
@@ -26,3 +29,80 @@
    opacity: 0.30;
  }
 };
+
+.welcome {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #3399ff;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
+};
+
+.btn {
+  background-color: #ffff00;
+  padding: 15px 32px;
+  border: 2px solid #d9d9d9;
+  color: #3399ff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+// Cards Index page styling
+
+.card-index-image-wrapper {
+ z-index: -1;
+position: fixed;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.30;
+}
+};
+
+.card-index-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #8c8c8c;
+  text-align: center;
+};
+
+
+.card-info {
+  background-color: #c7c7c7;
+  padding: 20px;
+  border: solid 1px #999;
+  box-shadow:  0 0 10px  rgba(0,12,0,0.6);
+  -moz-box-shadow: 0 0 10px  rgba(0,12,0,0.6);
+  -webkit-box-shadow: 0 0 10px  rgba(0,12,0,0.6);
+  -o-box-shadow: 0 0 10px  rgba(0,12,0,0.6);
+  border-top-left-radius:12px;
+  border-top-right-radius:12px;
+  border-bottom-left-radius:12px;
+  border-bottom-right-radius:12px;
+};
+
+.pad-25-top {
+  padding-top: 25px;
+};
+
+.gutter10 {
+  margin: 10px;
+};
+
+.quote {
+  text-align: center;
+};
+
+.author {
+  text-align: center;
+};
+
+.image {
+  align: right;
+}

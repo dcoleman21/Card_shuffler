@@ -17,7 +17,7 @@ RSpec.describe 'Cards index page features', type: :feature do
     visit root_path
     click_on 'Go to Cards'
     expect(current_path).to eq(cards_path)
-    expect(page).to have_content('Here is a collection of affirmations')
+    expect(page).to have_content('Daily Affirmations')
     expect(page).to have_content('You can shuffle to see other affirmations')
     expect(page).to have_button('Shuffle')
   end
@@ -38,7 +38,6 @@ RSpec.describe 'Cards index page features', type: :feature do
     visit root_path
     click_on 'Go to Cards'
     expect(current_path).to eq(cards_path)
-    # expect(page).to have_css('.cards', count: 50)
     within(first('.card')) do
       expect(page).to have_css('.description')
       expect(page).to have_css('.image')
