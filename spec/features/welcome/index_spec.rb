@@ -13,6 +13,6 @@ RSpec.describe 'Welcome page features', type: :feature do
     visit root_path
     expect(page).to have_button('Go to Cards')
     click_on 'Go to Cards'
-    expect(current_path).to eq('/cards')
+    expect(current_path).to eq(cards_path)
   end
 end
