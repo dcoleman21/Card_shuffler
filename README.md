@@ -79,3 +79,5 @@ Run `bundle exec rspec` to see all test. You should see all passing tests
 ## Author
 
 - **Dani Coleman** - [GitHub](https://github.com/dcoleman21) - [LinkedIn](https://www.linkedin.com/in/dcoleman-21/) - [Portfolio](https://terminal.turing.edu/profiles/601)
+
+[back to top](#table-of-contents)
