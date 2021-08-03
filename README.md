@@ -8,14 +8,13 @@ The scope of this application was to design and implement a card shuffler using 
 I chose to create a rails monolith application that provides daily inspiration cards with quotes and animal images. The user can use the `shuffle` button to view a new card.
 
 
-// #### Add heroku link here once deployed
+<!-- #### Add heroku link here once deployed -->
 
 ## Table of Contents
   - [Design](#design)
   - [Setup](#setup)
   - [Schema](#schema)
   - [Testing](#testing)
-
 
 
 ## Design
@@ -60,6 +59,8 @@ The database was created using `PostgreSQL`.
   UNSPLASH_CLIENT_SECRET: <add your cliend secret here>
   ```
 
+[back to top](#table-of-contents)
+
 ## Schema
 
 ![](app/assets/images/card_shuffler_schema.png)
@@ -71,3 +72,5 @@ Run `bundle exec rspec` to see all test. You should see all passing tests
 1. In your terminal press `command T` to open a new window
 2. In the command line type `rails s`
 3. In your web browser type `localhost:3000`, this will take you to the `Welcome Page`
+
+[back to top](#table-of-contents)
