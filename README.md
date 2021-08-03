@@ -15,6 +15,7 @@ I chose to create a rails monolith application that provides daily inspiration c
   - [Setup](#setup)
   - [Schema](#schema)
   - [Testing](#testing)
+  - [Author](#author)
 
 
 ## Design
@@ -74,3 +75,7 @@ Run `bundle exec rspec` to see all test. You should see all passing tests
 3. In your web browser type `localhost:3000`, this will take you to the `Welcome Page`
 
 [back to top](#table-of-contents)
+
+## Author
+
+- **Dani Coleman** - [GitHub](https://github.com/dcoleman21) - [LinkedIn](https://www.linkedin.com/in/dcoleman-21/) - [Portfolio](https://terminal.turing.edu/profiles/601)
